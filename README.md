@@ -1,4 +1,4 @@
 # Xpert-Data Website
 
-Contributors: Subham Rathore
+Contributors: Subham Rathore  &  
               Arya Sekhar Bandopadhyay
