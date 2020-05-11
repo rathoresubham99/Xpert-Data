@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Xpert Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <script src="https://kit.fontawesome.com/96bb625d68.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+              <link href="css/rotating-card.css" rel="stylesheet" />
+              <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel = "icon" href="images/navnav.png" 
+        type = "image/x-icon"> 
+        <style type="text/css">
+          
+
+.bar {
+  height: 4em;
+  padding-top: 2em;
+  opacity: 0.5;
+  background: black;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  margin-top: 5.0em;
+}
+h2.ontop {
+  position: relative;
+  top: 4.7em;
+}
+
+
+#para1{
+  color: white;
+  font-weight: bolder;
+  font-family: sans-serif;
+  margin-left: 80px;
+  position: center;
+  font-size: 25px;
+
+}
+#para1:hover{
+  color: blue;
+}
+#togg{
+  margin-left: 500px;
+}
+#textdeco{
+  margin-left: 80px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+  @-webkit-keyframes spincube {
+    from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    16%      { -webkit-transform: rotateY(-90deg);                           }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);            }
+    50%      { -webkit-transform: rotateY(-180deg) rotateZ(90deg);           }
+    66%      { -webkit-transform: rotateY(-270deg) rotateX(90deg);           }
+    83%      { -webkit-transform: rotateX(90deg);                            }
+  }
+
+  @keyframes spincube {
+    from,to {
+      -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      -moz-transform: rotateY(-90deg);
+      -ms-transform: rotateY(-90deg);
+      transform: rotateY(-90deg);
+    }
+    33% {
+      -moz-transform: rotateY(-90deg) rotateZ(90deg);
+      -ms-transform: rotateY(-90deg) rotateZ(90deg);
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      -moz-transform: rotateY(-180deg) rotateZ(90deg);
+      -ms-transform: rotateY(-180deg) rotateZ(90deg);
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      -moz-transform: rotateY(-270deg) rotateX(90deg);
+      -ms-transform: rotateY(-270deg) rotateX(90deg);
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      -moz-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
+      transform: rotateX(90deg);
+    }
+  }
+
+  .cubespinner {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 60px 60px 0;
+    -moz-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+  }
+
+  .cubespinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    line-height: 120px;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .cubespinner .face1 {
+    -webkit-transform: translateZ(60px);
+    -moz-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+  }
+  .cubespinner .face2 {
+    -webkit-transform: rotateY(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) translateZ(60px);
+    transform: rotateY(90deg) translateZ(60px);
+  }
+  .cubespinner .face3 {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  }
+  .cubespinner .face4 {
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face5 {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face6 {
+    -webkit-transform: rotateX(-90deg) translateZ(60px);
+    -moz-transform: rotateX(-90deg) translateZ(60px);
+    -ms-transform: rotateX(-90deg) translateZ(60px);
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+
+
+
+      .footer-section{
+        height: 650px;
+      }
+      
+       .owl-stage{
+        border-top-right-radius:50px; ;
+        border-bottom-right-radius:50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius:50px;
+        height: 100%;
+      }
+      .owl-carousel{
+        border-top-right-radius:50px; ;
+        border-bottom-right-radius:50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius:50px;
+        height: 100%;
+      }
+      .img-fluid{
+        height: 650px;
+        width: 1000px;
+      }
+      
+      .section-title{
+        font-family: candara;
+      }
+      .textsect{
+        font-size: 50px;
+      }
+      .site-section{
+        margin-bottom: 30px;
+      }
+      .text3{
+        font-family: cursive;
+        color: black;
+        font-weight: bolder;
+      }
+      .body3{
+        font-family: cursive;
+        color: black;
+      }
+    
+ .bgsect1{
+  
+background-image: url("https://cdn.dribbble.com/users/1270214/screenshots/7106615/media/63ef2c4f9ecdf5ba19b35badd215f1fe.png");
+
+background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+ }
+
+ .robo{
+  width: 300px;
+  height: 450px;
+  margin-top: 200px;
+  margin-left: 100px;
+
+ }
+ .our-team {
+  padding-left: 40px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: black;
+  text-align: justify-all;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px gray;
+  height: 500px;
+}
+.name{
+  color: white;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 200px;
+  width: 160px;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.5s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title{
+  font-size: 25px;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+.section-2{
+  height: 1000px;
+}
+body{
+  width: 100%;
+}
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px white;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#home-section{
+  height: 500px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+        </style>
+  
+
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  
+  <div id="overlayer"></div>
+  <div class="loader stage" style="width: 120px height:120px">
+    <div class="cubespinner">
+    <div class="fas fa-chart-bar fa-10x text-primary face1" role="status"></div>
+         <div class="fas fa-chart-bar fa-10x text-primary face2" role="status"></div>
+             <div class="fas fa-chart-bar fa-10x text-primary face3" role="status"></div>
+                 <div class="fas fa-chart-bar fa-10x text-primary face4" role="status"></div>
+                     <div class="fas fa-chart-bar fa-10x text-primary face5" role="status"></div>
+                        <div class="fas fa-chart-bar fa-10x text-primary face6" role="status"></div>
+      <span class="sr-only">Xpert Data Loading...</span>
+    </div>
+  </div>
+</div>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html"><i class="fas fa-chart-bar fa-3x"></i></a></div>
+          <div>
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                
+                
+
+
+
+                <li><a href="#about" class="nav-link">About Us</a></li>
+
+
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+
+
+                <li><a href="#teampage" class="nav-link">Meet the team</a></li>
+               
+              
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-primary rounded text-white border-primary">Contact Us!</span></a></li>
+                
+              </ul>
+            </nav>
+          </div>
+        
+            <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-left"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+<div class="intro-section" id="home-section">
+  <div class="container">
+      
+        <div class="row align-items-center">
+        
+            
+              <div class="col-lg-5 mr-auto" data-aos="fade-up">
+              <img src="images/robot2.png" class="robo">
+ 
+
+
+      
+ <h3> <a id="textdeco" class="typewrite" data-period="2000" data-type='["We are Xpert Data.","Making your Analytics easier.","Engineers Build..." ]'>
+    <span class="wrap"></span></a></h3></div>
+
+</div>
+
+</div>
+</div>
+
+
+
+          
+      
+      
+
+
+
+    <div class="site-section section-1">
+      
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mr-auto mb-5"  data-aos="fade-up">
+
+            <div class="mb-5">
+              <p><h2 class="section-title body3 " id="about" style="color: #40566D"><u>About Xpert Data solutions</u></h2></p>
+              <p></p>
+              <p class=" body3">We are a team of Data Analysts, AI fullstack developers and Fullstack Web developers who are highly skilled in delivering the business models, AI products and fully dynamic websites using state of the art technologies. Deep Learning Models, Business  Models, AI products, Websites as well as content delivery...You name it and we will create it for you. </p>
+
+              <p class="mb-5"> <b>We believe in customer satisfaction.Hire us because we provide you:</b>
+              </p>
+
+              <ul class="ul-check list-unstyled-success">
+                <li>24X7 Customer Service Support.</li>
+                <li>Special Offers to our regular clients.</li>
+                <li>contracts for College projects.</li>
+                <li>Learning modules for free.</li>
+                <li>Cheaper Prices.</b></li>
+              </ul>
+            </div>
+
+            
+          </div>
+
+          <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="100">
+            <div class="image-absolute-box">
+              
+              <img src="images/robot.jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container section-counter">
+      <div class="row">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="">
+          <div class="counter d-flex align-items-start mb-5">
+            <div class="icon-wrap"><span class="fa fa-user-o text-primary"></span></div>
+
+            <div class="counter-text">
+              <strong class="number" data-number="3">0</strong>
+              <span>Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="counter d-flex align-items-start">
+            <div class="icon-wrap"><span class="flaticon-monitor text-primary"></span></div>
+            <div class="counter-text">
+              <strong class="number" data-number="6">0</strong>
+              <span> Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="counter d-flex align-items-start mb-5">
+            <div class="icon-wrap"><span class="flaticon-chat text-primary"></span></div>
+            <div class="counter-text">
+              <strong class="number" data-number="4">0</strong>
+              <span>Collaborations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="counter d-flex align-items-start">
+            <div class="icon-wrap"><span class="fa fa-clone text-primary"></span></div>
+            <div class="counter-text">
+              <strong class="number" data-number="3">0</strong>
+              <span>Workshops</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section bg-light" id="services-section" data-aos="fade">
+      <div class="container">
+        
+            <h2 class="section-title"><u>Services</u></h2>
+
+            <p><b> We at Xpert data Solutions offer different types of Industry and Educational Services. Our Highly Skilled developers will make your tasks
+              easier. We provide you high quality product and services like Data Analytics services, Deep Learning and Machine Learning Projects,Chatbots, Content Writing Services, Webites and Apps, Dashboards, Charts and Visualisation. We offer you 24X7 assistance. We will soon start providing free study materials which can be downloaded directly from our websites. Stay tuned and have a look on the services we offer...</b> </p>
+         
+      </div>
+<p>
+        
+      <div class="owl-carousel nonloop-block-14">
+        
+        <div class="service bg-light">
+          <div>
+            <span class="custom-icon-wrap"><span> <i class="fas fa-chart-line"></i></span></span>
+            <h3 class="text3">Daily Analytics</h3>
+            <p class="body3">We handle your daily analytics, business analytics, and daily statistics, maintaining them so you can remain updated with your agile decisions and stay competitive in the world of data.</p>
+          </div>
+        </div>
+
+
+        <div class="service bg-light">
+          <div>
+            <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
+            <h3 class="text3">Website Development</h3>
+            <p class="body3">We build highly interactive and dynamic websites as per your need, so that you can represent your company's face with highly interactive, ready to use production websites.</p>
+          </div>
+        </div>
+
+        <div class="service bg-light">
+          <div>
+            <span class="custom-icon-wrap"><span><i class="fas fa-chart-pie"></i></span></span>
+            <h3 class="text3">Dashboards and Story Telling</h3>
+            <p class="body3">Since the data is the new oil, users need the important insights of the data to be visulized. we at Xpert Data solutions take care of the dashboards for you, nice dashboards using Tableau and Power BI</p>
+          </div>
+        </div>
+
+        <div class="service bg-light">
+          <div>
+            <span class="custom-icon-wrap"><span><i class="fas fa-robot"></i></span></span>
+            <h3 class="text3">Machine Learning and Artificial Intelligence Projects</h3>
+            <p class="body3">Skilled in the latest Deep Learning, Artificial Intelligence and Intelligent Machine Algorithms, we at Xpert Data solutions take care of the Projects for Industrial uses, like AI products, Chatbots, And Business Intelligence Models </p>
+          </div>
+        </div>
+
+        <div class="service bg-light">
+          <div>
+            <span class="custom-icon-wrap"><span><i class="fas fa-feather-alt"></i></span></span>
+            <h3 class="text3">Content Writing</h3>
+            <p class="body3">Providing best contents is always a challenging task. We at Xpert Data Solutions take care of your needs by providing daily website contents, technical contents and contents for Business and Marketing firms.</p>
+          </div>
+        </div>
+
+      </div>
+  </p>
+
+  </div>
+
+    <div class="site-section section-2 bgsect1" id="process-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5  boxing">
+            <h2 class="section-title" id="teampage">Meet Our Team</h2>
+            <p class="text3"> <b>We are a team of Data Engineers, Data Scientists and Full Stack Developers, working together to bring you the best of the services because Customer Satisfaction and delivering the best products are our priority.</b></p>
+          </div>
+        </div>
+    </div>
+       <div class="owl-carousel nonloop-block-14">
+        
+        
+          
+        <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/C5603AQG-2tmZZ2MFAg/profile-displayphoto-shrink_800_800/0?e=1594252800&v=beta&t=N0M9VlDT3iXutDa3N5eICGS2ak0RilZxDKmsi_yi6UM">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Subham Rathore</h3>
+          <h4 class="title">Co-Founder</h4>
+          <h4 class="title">(Machine Learning Engineer & Web Developer)</h4>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+          
+          <li><a href="#" class="fa fa-github" aria-hidden="true"></a></li>
+          <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    
+     
+         <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="images/mayankbsdk.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Mayank Kaushik</h3>
+          <h4 class="title"><p>Technical Team Member</p></h4>
+          <h4 class="title"><p>(Web Developer)</p></h4>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+          
+          <li><a href="#" class="fa fa-github" aria-hidden="true"></a></li>
+          <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+   
+    </div> 
+        
+    <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/C5103AQFp0MTOu5lmvA/profile-displayphoto-shrink_800_800/0?e=1594252800&v=beta&t=SlgCj7Eg4nn4r7vGPU-CcG2mcM477noVQkq1rFGam0c">
+        </div>
+        <div class="team-content">
+          <h3 class="name"><p>Saurabh Agarwal</p></h3>
+          <h4 class="title"><p>Technical Team Member</p></h4>
+          <h4 class="title"><p><p>(Full Stack Web Developer)</p></p></h4>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+         
+          <li><a href="#" class="fa fa-github" aria-hidden="true"></a></li>
+          <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+     
+
+   
+    <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/C5103AQFzkrgLw8Lu7A/profile-displayphoto-shrink_800_800/0?e=1594252800&v=beta&t=zxfaNbMrwQ3C6rxdJfW9H0E2I4hPsP1Zu4FNR20Qi_Q">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Arya Sekhar Bandopadhyay</h3>
+          <h4 class="title"></h4>
+          <h4 class="title">Founder</h4>
+          <h4 class="title">(AI & Blockchain Fullstack Developer)</h4>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+         
+          <li><a href="#" class="fa fa-github" aria-hidden="true"></a></li>
+          <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+    <div class="site-section bg-light" id="contact-section"  data-aos="fade">
+      <div class="container">
+      
+
+        <div class="row align-items-center">
+          <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0">
+            <img src="images/mbs.jpg" alt="Image" class="img-fluid" style="height: 400px">
+          </div>
+          <div class="col-md-6 mr-auto order-2 order-md-1">
+            
+            <h2 class="section-title mb-3">Contact Us</h2>
+            <p class="mb-5">Contact Us for any queries. Drop a message and We will get back to you. In case of Enquiry, Please provide the details and we promise to offer you the best quotation and packages for our services.</p>
+          
+            <form method="post" target="blank_" action="">
+              <div class="form-group row" >
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control" placeholder="First name" name="first-name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name" name="last-name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Subject" name="Subject">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here." name="message"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  
+                  <input type="submit" class="btn btn-danger py-3 px-5 btn-block" value="Send" name="submit">
+                </div>
+              </div>
+
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  
+     <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light fa fa-chart-bar fa-5x" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x" style="margin-top: 45px" ></a>
+                <p style="margin-top: 85px">We are a team of Data Analysts, Machine Learning Engineers and Fullstack Web Developers working to make your Work easier...</p>
+                
+               
+              </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 45px">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt><i class="fas fa-map-marker-alt"></i></dt>
+                <dd>Intra-College Road, Potheri, Tamil Nadu</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><i class="fas fa-envelope"></i></dt>
+                <dd><a href="mailto:#">abc@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><i class="fas fa-phone"></i></dt>
+                <dd>1234567890 <span>or</span> 9876543210
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3" style="margin-top: 45px">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#teampage">Our Team</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></span></a></div>
+        </div>
+      </footer>
+  
+    
+  </div> 
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+    
+    <script>
+
+      var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  
+  </body>
+</html>
